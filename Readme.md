@@ -32,3 +32,16 @@ Really,really and really great courses for OpenFOAM beginners.
 - Two-phase
 - Combustions
 - OpenFOAM coding
+
+# Tools
+
+## 1. Git
+- [GitHub learning lab](https://lab.github.com/)
+- [Git教程 廖雪峰](https://www.liaoxuefeng.com/wiki/896043488029600)
+
+## 2. Python
+- [Python教程 廖雪峰](https://www.liaoxuefeng.com/wiki/1016959663602400)
+
+## 3. Fortran
+- [Fortran 95 程序设计](http://fcode.cn/resource_ebook-1-1.html)
+- [Fcode.cn](http://fcode.cn/)
