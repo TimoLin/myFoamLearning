@@ -45,3 +45,9 @@ Really,really and really great courses for OpenFOAM beginners.
 ## 3. Fortran
 - [Fortran 95 程序设计](http://fcode.cn/resource_ebook-1-1.html)
 - [Fcode.cn](http://fcode.cn/)
+
+# My notes of learning OpenFOAM
+
+1. [Boundary Condition](./codedInlet.md)
+2. [Post Processing](./postProcessing.md)
+3. [Vim](./vim.md)
