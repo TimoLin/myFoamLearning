@@ -41,3 +41,36 @@ postProcessing
         fields ( p U T);
     }
 ```
+
+2. Surface sammling during simulation
+
+```cpp
+    surfaceSampling
+    {
+        type surfaces;
+        functionObjectLibs ("libsampling.so");
+        enabled         true;
+        outputControl   timeStep;
+        outputInterval	500;
+
+        interpolationScheme cell;
+        surfaceFormat vtk;
+        // Fields to be sampled
+        fields
+        (
+            Z T C U OH
+        );
+
+        surfaces
+        (
+             middleCut
+             {
+                type            plane;
+                interpolate	true;
+                triangulate	false;
+                normalVector	(1 0 0);
+                basePoint	(0.0001 0 0);
+             }
+        );
+    }
+```
