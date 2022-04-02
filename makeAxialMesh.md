@@ -19,12 +19,15 @@ Make sure the axis is set in the boundary conditions.
 ### 2. Convert ICEM 2d mesh to OpenFOAM
 Use `fluentMeshToFoam`:
 ```sh
-fluentMeshToFoam -scale 0.001 fluent.msh
+fluentMeshToFoam fluent.msh
 ```
+Note: Don't use scale option! Use mm to prevent roundOff error.  
 ### 3. Convet the mesh type
 Use `makeAxialMesh`:
 ```sh
-$ makeAxialMesh -axis AXIS -wedge frontAndBackPlanes -offset 1e-6
+makeAxialMesh -axis AXIS -wedge frontAndBackPlanes -offset 1e-6 -overwrite
+# Use flattenMesh to prevent checkMesh error
+flattenMesh
 ```
 Please note! The config `-offset 1e-6` is used to fix this error report:
 ```
@@ -61,13 +64,20 @@ collapseEdgesCoeffs
 {
     minimumEdgeLength   1e-6;
 
-    maximumMergeAngle   179;
+    maximumMergeAngle   179.5;
 }
 ```
 Run this command:
 ```sh
-collapseEdges -latestTime
+collapseEdges -overwrite
+# Scale mesh from mm to m
+transformPoints -scale "(1e-3 1e-3 1e-3)"
 ```
-Then move the `polyMesh` in the latestTime folder to `constant` folder.  
 See Ref[2] for more information.
+
+### 5. Check
+Check mesh and boundary patch names in `constant/polyMesh/boundary`.  
+```sh
+checkMesh 
+```
 
