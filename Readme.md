@@ -52,3 +52,13 @@ Really,really and really great courses for OpenFOAM beginners.
 2. [Post Processing](./postProcessing.md)
 3. [makeAxialMesh](./makeAxialMesh.md)
 3. [Vim](./vim.md)
+
+# Solvers or Libraries
+
+## Combustion
+1. [pdfFoam](https://github.com/wildmichael/pdfFoam)
+2. [CRECKFlameletModel](https://github.com/shor-ty/CRECKFlameletModel)
+3. [sootlib](https://github.com/BYUignite/sootlib)
+
+## Turbulence
+1. [TurbLab](https://github.com/syavash20/TurbLab)
