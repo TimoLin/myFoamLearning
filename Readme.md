@@ -59,6 +59,8 @@ Really,really and really great courses for OpenFOAM beginners.
 1. [pdfFoam](https://github.com/wildmichael/pdfFoam)
 2. [CRECKFlameletModel](https://github.com/shor-ty/CRECKFlameletModel)
 3. [sootlib](https://github.com/BYUignite/sootlib)
+4. [CombustionAddons](https://sourceforge.net/projects/ofca/)
 
 ## Turbulence
 1. [TurbLab](https://github.com/syavash20/TurbLab)
+2. [perturbU](https://github.com/wyldckat/perturbU)
